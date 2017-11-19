@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Book List App</string>
+    <string name="near_the">Near the</string>
+    <string name="no_books">No books found.</string>
+    <string name="no_connection">No internet connection.</string>
+    <string name="searchResult">Search Results</string>
+    <string name="searchHint">Enter book search here</string>
+    <string name="search">Search</string>
+</resources>

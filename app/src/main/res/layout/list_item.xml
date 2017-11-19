@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/standardPadding"
+        android:paddingLeft="@dimen/standardPadding"
+        android:paddingRight="@dimen/standardPadding"
+        android:paddingStart="@dimen/standardPadding">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_marginTop="@dimen/standardPadding"
+            android:layout_width="@dimen/thumbnailSize"
+            android:layout_height="@dimen/thumbnailSize"
+            android:src="@drawable/no_cover_thumb"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="@dimen/standardPadding"
+            android:layout_marginLeft="@dimen/standardPadding"
+            android:layout_marginStart="@dimen/standardPadding"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:textAllCaps="true"
+                android:textColor="@color/textColorDetails"
+                android:textSize="@dimen/line1TextSize"
+                tools:text="BattleTech 18: Royal Flush" />
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/textColorDetails"
+                android:textSize="@dimen/line2TextSize"
+                tools:text="Carolina Möbis" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="@dimen/standardPadding"
+            android:layout_marginLeft="@dimen/standardPadding"
+            android:layout_marginStart="@dimen/standardPadding"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:id="@+id/publisher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:textColor="@color/textColorPublish"
+                android:textSize="@dimen/line1TextSize"
+                tools:text="Ulisses Spiele" />
+
+            <TextView
+                android:id="@+id/publishedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:textColor="@color/textColorPublish"
+                android:textSize="@dimen/line2TextSize"
+                tools:text="2013-06-06" />
+
+        </LinearLayout>
+    </LinearLayout>
